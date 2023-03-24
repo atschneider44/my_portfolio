@@ -1,0 +1,97 @@
+.project-titles {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white !important;
+  font-size: 4vw;
+}
+
+.scroll-button {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 85%;
+  left: 97%;
+  color: white !important;
+  font-size: 2vw;
+}
+
+.sectiongroup {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  font-size: 2vw;
+  font-weight: bold;
+  color: white !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 12vh;
+  margin-left: 18%;
+}
+
+#assignmentDescription,
+#define,
+#prototype {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nav {
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 0;
+  height: 100vh;
+  min-height: 70px;
+  width: 15%;
+  background-color: black;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+  color: #8e2a9a !important;
+}
+
+ul {
+  font-size: 1 vw;
+  list-style-type: none;
+}
+
+.linkSideNav {
+  cursor: pointer;
+  margin: 10% 0;
+  margin-left: 1rem;
+}
+
+.linkSideNav:hover {
+  text-decoration: none;
+  color: #8e2a9a;
+}
+
+.text-main-project {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.5vw;
+  margin-top: 2vh;
+  font-weight: normal;
+}
+
+.text-target-project {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.5vw;
+  margin-top: 2vh;
+  font-weight: normal;
+}
+
+#targetAndStake {
+  height: 150vh !important;
+}
+
+.target-list li {
+  font-size: 1.5vw;
+  text-decoration: disc !important;
+}
