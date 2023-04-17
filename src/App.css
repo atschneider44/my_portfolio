@@ -17,3 +17,11 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
+
+html {
+  --cursor-color: #333
+}
+
+html.dark-mode {
+  --cursor-color: #fff
+}

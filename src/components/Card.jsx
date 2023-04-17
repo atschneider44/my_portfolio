@@ -14,7 +14,7 @@ export default function App() {
                 <li className="event" data-date="Oct 22 - Feb 23">
                   <h4 className="mb-3">Steward at Stadslab Rotterdam</h4>
                   <p>Rotterdam, Netherlands</p>
-                  <p>
+                  <p className="timeline-description">
                     Stabslab is a makelab that provides students with 3D
                     printers, laser cutters, embroidery machines, welding
                     stations, and many more machines to allow students to create

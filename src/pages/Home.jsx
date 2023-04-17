@@ -1,11 +1,12 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 import Footer from "../components/Footer.jsx";
 import ScrollButton from "../components/scrollButton.jsx";
 import Navbar from "../components/Navbar.jsx";
 import logo from "../images/annaani.png";
 import annapic from "../images/annapics.jpg";
+import divider from "../images/sectiondivider.gif";
 import "./css/Home.css";
 
 export default class Home extends Component {
@@ -18,11 +19,14 @@ export default class Home extends Component {
       <div className="homePageCircles">
         <Navbar />
         <div className="home-page">
-
-          <HashLink className="scroll-button" to="#home-about"><ScrollButton></ScrollButton></HashLink>
+          <HashLink className="scroll-button" to="#home-about">
+            <ScrollButton></ScrollButton>
+          </HashLink>
           <img src={logo} className="main-pic" alt="" />
         </div>
-        {/* <button onClick={executeScroll}> Click to scroll </button> */}
+        <div className="main-section-divider">
+          <img src={divider} className="section-divider" alt="" />
+        </div>
         <section className="home-about-section" id="home-about">
           <div className="home-about-grid">
             <div className="home-about-grid-item1">
@@ -53,11 +57,12 @@ export default class Home extends Component {
                 want to know a little more about mym projects?
               </p>
             </div>
-            {/* <div ref={this.myRef}>Element to scroll to</div> */}
           </div>
         </section>
+        <div className="main-section-divider-bottom">
+          <img src={divider} className="section-divider" alt="" />
+        </div>
         <div className="space-bottom"></div>
-
         <Footer />
       </div>
     );

@@ -2,21 +2,54 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import GroupProject from "./pages/GroupProject.jsx";
-import IndividualProject from "./pages/IndividualProject.jsx";
-import InternationalProject from "./pages/InsternationalProject.jsx";
+import Contact from "./pages/Contact.jsx";
+import MyProjects from "./pages/MyProjects.jsx";
+import AnimatedCursor from "react-animated-cursor";
+
 import "./App.css";
 
 export default class App extends Component {
   render() {
     return (
       <Router>
+        <AnimatedCursor
+          color="54, 255, 32"
+          innerSize={8}
+          outerSize={25}
+          innerScale={1}
+          outerScale={1.7}
+          outerAlpha={0.5}
+          hasBlendMode={true}
+          outerStyle={{
+            zIndex: "1000000",
+          }}
+          innerStyle={{
+            zIndex: "1000000",
+          }}
+        />
+
+<AnimatedCursor
+  color="white"
+  innerSize={8}
+  outerSize={35}
+  innerScale={1}
+  outerScale={1.7}
+  outerAlpha={0}
+  hasBlendMode={true}
+  outerStyle={{
+    mixBlendMode: 'exclusion',
+    zIndex: "1000000"
+  }}
+/>
+
+
+
+
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/groupproject" element={<GroupProject />} />
-          <Route path="/individualproject" element={<IndividualProject />} />
-          <Route path="/internationalproject" element={<InternationalProject />} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/myprojects" element={<MyProjects />} />
         </Routes>
       </Router>
     );

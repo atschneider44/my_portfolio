@@ -16,17 +16,17 @@ class Navbar extends Component {
           </Link>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav justify-content-center ">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/individualproject">Individual Project <span className="sr-only">(current)</span></Link>
+            <li className="nav-item active">
+                <Link className="nav-link" to="/">Home<span className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/groupproject">Group Project</Link>
+                <Link className="nav-link" to="/myprojects">My Projects<span className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/internationalproject">International Project</Link>
+                <Link className="nav-link" to="/about">About Me</Link>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
