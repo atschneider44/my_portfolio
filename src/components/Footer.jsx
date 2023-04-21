@@ -80,13 +80,14 @@ export default class Footer extends Component {
             <span>Get connected with me on social networks </span>
           </div>
           <div>
-            <a href="/" className="me-4 text-reset social-icons">
+            <a href="https://git.fhict.nl/I433651" className="me-4 text-reset social-icons">
             <GitlabLogo size={32} color="#ffffff" weight="fill" />
             </a>
-            <a href="/" className="me-4 text-reset social-icons">
+   
+            <a href="" className="me-4 text-reset social-icons">
             <LinkedinLogo size={32} color="#fcfcfc" weight="bold" />
             </a>
-            <a href="/" className="me-4 text-reset social-icons">
+            <a href="https://www.instagram.com/annatschn/" className="me-4 text-reset social-icons">
             <InstagramLogo size={32} color="#fcfcfc" weight="bold" />
             </a>
           </div>

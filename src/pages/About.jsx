@@ -57,22 +57,39 @@ export default class About extends Component {
             />
             <TypeAnimation
               sequence={[
-                3000,
+                2000,
                 "Do you want to know a little more about me?",
-                3000,
-                "Cool :)",
-                3000,
-                "I’m currently a 4th year ICT & Media Design student at Fontys University of Applied Sciences. I am Brazilian/German and had the opportunoty to grow up in many places like Morocco, Chile, and Belarus. Feel free to reach out to me with any inqueries and keep scrolling to see the experience and skills I have.", // Waits 2s
+                2000,
+                "Do you want to know a little more about me? Cool :)",
+
+                () => {},
+              ]}
+              wrapper="div"
+              cursor={false}
+              speed={50}
+              repeat={0}
+              deletionSpeed={70}
+              style={{
+                fontSize: "1.5vw",
+                color: "white",
+                textJustify: "left",
+              }}
+            />
+            <div style={{ height: "3vh" }}></div>
+             <TypeAnimation
+              sequence={[
+                8000,
+                "I’m currently a 4th year ICT & Media Design student at Fontys University of Applied Sciences. I am Brazilian/German and had the opportunity to grow up in many places like Morocco, Chile, and Belarus. I love movies and music, please feel free to always send me a song :). Feel free to reach out to me with any inqueries you might have and keep scrolling to see the experience and skills I have.", // Waits 2s
 
                 () => {},
               ]}
               wrapper="div"
               cursor={true}
-              speed={20}
+              speed={60}
               repeat={0}
-              deletionSpeed={50}
+              deletionSpeed={70}
               style={{
-                fontSize: "1.5vw",
+                fontSize: "1.3vw",
                 color: "white",
                 textJustify: "left",
               }}
@@ -112,6 +129,7 @@ export default class About extends Component {
             </div>
           </div>
         </div>
+        <div style={{ height: "3vh" }}></div>
         <Footer />
       </div>
     );

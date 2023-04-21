@@ -15,5 +15,4 @@ export default class ButtonHome extends Component {
             </AwesomeButton></Link>
           );
     }
-
 }

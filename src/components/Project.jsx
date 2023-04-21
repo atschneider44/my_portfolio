@@ -103,10 +103,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
      
     </div>
         <button className="button-projects" onClick={() => (window.location.href = github)}>
-          Github
-        </button>
-        <button className="button-projects" onClick={() => (window.location.href = deployed)}>
-          Final Product
+          Final Product/Code
         </button>
         <button className="button-projects" onClick={() => (window.location.href = documentation)}>
           Documentation

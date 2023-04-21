@@ -28,23 +28,6 @@ export default class App extends Component {
           }}
         />
 
-<AnimatedCursor
-  color="white"
-  innerSize={8}
-  outerSize={35}
-  innerScale={1}
-  outerScale={1.7}
-  outerAlpha={0}
-  hasBlendMode={true}
-  outerStyle={{
-    mixBlendMode: 'exclusion',
-    zIndex: "1000000"
-  }}
-/>
-
-
-
-
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
