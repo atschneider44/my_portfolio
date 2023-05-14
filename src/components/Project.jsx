@@ -84,19 +84,19 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
             padding: "60px",
             display: "flex",
             flexDirection: "column",
-            width: "33vw",
+            width: "50vw",
             top: "50%",
             left: "50%",
             right: "auto",
             bottom: "auto",
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
-            zIndex: "999",
+            zIndex: "200000",
             overflow: "hidden"
           },
         }}
       >
-        <img src={close} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+        <img src={close} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close" style={{marginRight: "-20vw"}}></img>
         <h3 className="modalTitle">{title}</h3>
         <p className="projectDescription">{description}</p>
     <div>
