@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <Router>
         <AnimatedCursor
-          color="54, 255, 32"
+          color="255, 255, 255"
           innerSize={8}
           outerSize={25}
           innerScale={1}
