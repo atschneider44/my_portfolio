@@ -58,7 +58,7 @@ export default class About extends Component {
             <TypeAnimation
               sequence={[
                 2000,
-                "Do you want to know a little more about me?",
+                "111111Do you want to know a little more about me?",
                 2000,
                 "Do you want to know a little more about me? Cool :)",
 

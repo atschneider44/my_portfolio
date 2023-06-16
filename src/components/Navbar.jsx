@@ -20,14 +20,20 @@ class Navbar extends Component {
                 <Link className="nav-link" to="/">Home<span className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/myprojects">My Projects<span className="sr-only">(current)</span></Link>
+                <Link className="nav-link" to="/individualproject">Individual Project<span className="sr-only">(current)</span></Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/groupproject">Group Project<span className="sr-only">(current)</span></Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/internationalproject">International Project<span className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item active">
                 <Link className="nav-link" to="/about">About Me</Link>
               </li>
-              <li className="nav-item active">
+              {/* <li className="nav-item active">
                 <Link className="nav-link" to="/contact">Contact</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

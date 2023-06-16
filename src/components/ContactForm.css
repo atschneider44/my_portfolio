@@ -72,12 +72,13 @@
 
 .contact-form-grid-item-submit {
   display: flex;
-  grid-row-start: 7;
+  /* grid-row-start: 7;
   grid-row-end: 8;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 2; */
   justify-content: center;
   align-items: center;
+
 }
 
 .contact-input {

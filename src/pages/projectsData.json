@@ -1,58 +1,40 @@
 [
   {
-    "title": "Youth Work with Munincipality of Eindhoven and Garage2020",
-    "image": "../projectImages/garage2020.png",
-    "description": "Youth organisations have been noticing that there is a gap between youth workers and the youth on the online world. Garage2020 was bought on by the Municipality of Eindhoven to explore possible methods to bridge this gap. There are two main youth organisations that we are working with, Dynamo & Pitstop. Currently, we are on the research phase of our assignment, conducting literary and field research(interview with youth workers).",
-    "technologies": "User Research & Design | Figma | & more ",
-    "github": "none",
-    "deployed": "",
+    "title": "Moodboard",
+    "image": "../projectImages/fontologo.png",
+    "technologies": "Connected to Sub-Research Question 4",
+    "description":"Creating a moodboard for a portfolio website is essential as it helps establish a cohesive visual direction and aesthetic for your online presence. It allows you to gather and arrange design elements, color schemes, typography, and imagery that align with your personal brand and desired message. A moodboard serves as a visual guide throughout the design process, ensuring consistency and conveying the desired atmosphere to captivate potential clients or employers.",
+    "description2": "To create a moodboard for a portfolio website, start by collecting visual inspiration images, screenshots, color palettes, typography, and textures that align with the desired look and feel of your final website. Arrange these elements on a digital canvas, focusing on creating a cohesive visual narrative that reflects the website's desired mood, style, and user experience. Use the moodboard as a reference throughout the design process to ensure consistency and convey the intended aesthetic.",
     "bgcolor": "purple",
-    "id": "1",
-    "year": "Feburary 2023 - ongoing"
+    "id": "1"
+ 
   },
 
   {
-    "title": "Internship at FontoXML",
+    "title": "Benchmark Creation",
     "image": "../projectImages/fontologo.png",
-    "description": "My internship assignment at Fonto was to design and develop a concept for a help center for the end-users of their XML Editor. I worked with the Design Thinking Methodology and went through all phases of the process. I used many CMD methods for my empathise and defining phases such as competitor analysis, surveys, interviews, and many more. I created wireframes and prototypes using Figma, and lastly began developing the Help Center using React and CSS. This was a full time internship and lasted for about 5 months.  ",
-    "technologies": " User Research | UX Design | Figma | React",
-    "github": "https://www.figma.com/file/dRErhy0Gp12f87dhYyrF0e/Help-Center-Project?node-id=6%3A2&t=Sf0qApfCZqMYgBp6-1",
-    "documentation": "https://docs.google.com/document/d/1IRv1XP0xVXV_JRqkUgC1AduY7lm6iMqypa4yf0L8lJM/edit?usp=sharing",
-    "bgcolor": "orangered",
-    "id": "2",
-    "year": "September 2021 - January 2022"
-  },
-  {
-    "title": "Scout",
-    "image": "../projectImages/scout.png",
-    "technologies": "React | Node.js | MongoDB | AdobeXD",
-    "description": "Scout is a web application that was developed to facilitate the creation of project/class groups at Fontys for the ICT an Media Design program. Groups would be formed based on skills and preferences rather than forming them based on friends or at random. The app was primarily designed to be used as a mobile web application. The web application is a  MERN full stack (MongoDB, Express, React, Node.js). Other significant technologies that were implemented were Redux, Material UI, Heroku, and AdobeXD. ",
-    "github": "https://scout-dopeamine.herokuapp.com/",
-    "documentation": "https://itsdopeamine.tumblr.com/",
-    "bgcolor": "yellow",
-    "id": "3",
-    "year": "September 2020 - January 2021"
-  },
-  {
-    "title": "Utimaco",
-    "image": "../projectImages/utimaco.png",
-    "technologies": "UX Design | Axure",
-    "description": "We created a new website architecture for Utimaco. The product owner for this project was the Lead at WEBBER, the development company that had made the Utimaco website. They had three separate websites for each of the companies sectors and wanted to see what design, sitemap, and information architecture that we could come up with for the unification of the three Utimaco websites. Axure was used to make the prototype of the new website.",
-    "github": "https://dfwzla.axshare.com",
-    "documentation": "https://drive.google.com/file/d/13do4Mhk_gzBd-YpOLmHSByWnHbkOOBQc/view?usp=sharing",
+    "description": "The Benchmark Creation method provided  a way to evaluate the effectiveness of different design alternatives or solutions. By conducting a benchmark creation assessment, designers can establish a baseline which they can compare the performance of their designs to others in the industry, allowing for them to confirm that they are meeting industry standards.  This allows for designers to see strengths and weaknesses and make improvements in their own design, ensuring that they have selected the best design option.",
+    "description2": "To conduct benchmark creation for a portfolio website, begin by researching and exploring a variety of existing portfolio websites in your industry. Analyze their layouts, navigation, content organization, visual aesthetics, and overall user experience. Identify successful elements and patterns that align with your goals and target audience. Use these benchmarks as a reference to guide the design and development of your portfolio website, incorporating the best practices while adding your unique touch to stand out in the competitive landscape.",
+    "technologies": "Connected to Sub-Research Question 1 & 3 ",
     "bgcolor": "blue",
-    "id": "4",
-    "year": "October 2020"
+    "id": "2"
   },
   {
-    "title": "HanTang Website",
-    "image": "../projectImages/hantang.png",
-    "technologies": "JS | HTML | CSS",
-    "description": "For this project, we designed a new website for HanTang Eindhoven Chinese School. I had the opportunity to work with a client directly at the school. They had an outdated website that also did not have many options for language. We designed a new website that implemented new features such as online enrolment, three language versions of the website, and integrating a calendar feature. The duration of the project was two months.",
-    "github": "http://i427704.hera.fhict.nl/index.html",
-    "documentation": "https://docs.google.com/document/d/12xfYOBoEAmVfcThskq9CWvn1XYhbHB4WZd_PMd1zKrs/edit?usp=sharing",
-    "bgcolor": "#f85781",
-    "id": "5",
-    "year": ""
+    "title": "Usability Testing",
+    "image": "../projectImages/fontologo.png",
+    "description": "Usability testing for a portfolio website is crucial to ensure that it effectively communicates your skills and work to potential clients or employers. It helps identify user experience issues, usability barriers, and areas of improvement that may hinder visitors from navigating or engaging with your portfolio. By conducting usability testing, you can gather valuable feedback, make informed design decisions, and optimize your website's usability to create a seamless and impactful user experience.",
+    "description2": "To conduct usability testing for a portfolio website, start by defining specific tasks or scenarios that users would typically engage with on the site. Recruit a diverse group of participants who represent your target audience. Observe and record their interactions with the website, noting any issues, confusion, or areas of improvement. Collect feedback through post-test interviews or surveys to gain insights into the user experience and make data-driven improvements to enhance the usability and effectiveness of your portfolio website.",
+    "technologies": "Connected to Sub-Research Question 2 ",
+    "bgcolor": "blue",
+    "id": "3"
+  },
+  {
+    "title": "Wireframes",
+    "image": "../projectImages/fontologo.png",
+    "description": "Creating wireframes for a portfolio website is essential to plan and structure the layout and content before diving into visual design. Wireframes provide a simplified representation of the website's elements, such as navigation, sections, and content placement, allowing you to focus on the site's structure and user flow. They serve as a blueprint for your portfolio, helping you visualize and iterate on the layout and ensure a well-organized and intuitive user experience.",
+    "description2": "To create wireframes for a portfolio website, begin by outlining the key sections and content you want to include. Use a wireframing tool or pen and paper to sketch the basic layout, focusing on the placement of elements, such as navigation, headings, images, and text. Keep the wireframes simple and devoid of detailed visuals to prioritize the structure and hierarchy of information. Iterate and refine the wireframes based on feedback and user testing to ensure optimal usability and a clear representation of your portfolio's content.",
+    "technologies": "Connected to Sub-Research Question 1 & 2 ",
+    "bgcolor": "purple",
+    "id": "4"
   }
 ]

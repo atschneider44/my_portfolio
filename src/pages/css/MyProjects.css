@@ -76,7 +76,7 @@
   
   .closeModal {
     width: 1.3vw;
-    margin: 0 0 2vh 41vw;
+    margin: 0 0 2vh 68vw;
     
   }
   
@@ -89,9 +89,14 @@
     margin-bottom: 3vh;
     color: white;
   }
+
+  .modalTitleSmall {
+    margin-bottom: 3vh;
+    color: white;
+  }
   
   .projectDescription {
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
     text-align: justify;
     text-justify: inter-word;
   }

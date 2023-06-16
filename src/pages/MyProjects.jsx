@@ -30,7 +30,7 @@ const MyProjects = () => {
       <TypeAnimation
       sequence={[
         1000,
-        'My Projects',
+        'sadmlMy Projects',
       ]}
       wrapper="span"
       cursor={true}

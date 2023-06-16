@@ -1,90 +1,120 @@
-.project-titles {
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white !important;
-  font-size: 4vw;
+.nav_sub {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  height: 16vh;
+  min-height: 70px;
+  width: 100vw;
+  background-color: black;
+  padding: 0 1rem;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  margin-top: 7.5vh;
 }
 
-.scroll-button {
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 85%;
-  left: 97%;
-  color: white !important;
-  font-size: 2vw;
+.nav__container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed !important;
+  top: 0;
+  margin-top: 10vh;
+  justify-content: center;
+}
+
+.nav__container__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.activesub {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
 }
 
 .sectiongroup {
   display: flex;
   place-items: center;
-  height: 100vh;
-  font-size: 2vw;
-  font-weight: bold;
+  height: auto;
+
   color: white !important;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 12vh;
-  margin-left: 18%;
+  padding-top: 40vh;
 }
 
-#assignmentDescription,
-#define,
-#prototype {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.nav {
-  align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 0;
-  height: 100vh;
-  min-height: 70px;
-  width: 15%;
-  background-color: black;
-  color: black;
-}
-
-.active {
+.project-title {
+  font-size: 3vw !important;
+  text-justify: center;
   font-weight: bold;
-  color: #8e2a9a !important;
 }
 
-ul {
-  font-size: 1 vw;
-  list-style-type: none;
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 70vw;
 }
 
-.linkSideNav {
-  cursor: pointer;
-  margin: 10% 0;
-  margin-left: 1rem;
+.projGrid1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 20px;
+  grid-row-start: 1;
+  justify-content: center !important;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.linkSideNav:hover {
-  text-decoration: none;
-  color: #8e2a9a;
+.projGrid2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+
+  text-align: justify !important;
 }
 
-.text-main-project {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 1.5vw;
-  margin-top: 2vh;
-  font-weight: normal;
+.projGrid3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+
+  text-align: justify !important;
 }
 
-.text-target-project {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 1.5vw;
-  margin-top: 2vh;
-  font-weight: normal;
+.mainBodyTitle {
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+.mainBodyText {
+  font-size: 1.1vw;
+  text-indent: 3vw;
 }
 
 #targetAndStake {
@@ -94,4 +124,32 @@ ul {
 .target-list li {
   font-size: 1.5vw;
   text-decoration: disc !important;
+}
+
+.IndividualLText {
+  margin: 4vh 24vw 0 24vw;
+  text-align: justify;
+}
+
+.IndividualBText {
+  margin: 4vh 24vw 0 24vw;
+  text-align: justify;
+  
+}
+.indent{
+  text-indent: 3vw;
+}
+
+.researchQuestions {
+  margin-bottom: 5vh;
+}
+
+/* .researchQuestion:hover {
+  margin-bottom: 5vh;
+  text-decoration: none;
+} */
+
+.researchQuestionsSection {
+  margin-top: 2vh;
+  padding-left: 3vw;
 }

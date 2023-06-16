@@ -7,33 +7,39 @@ import projectData from "../pages/projectsData.json";
 //Icons
 import { IoMdClose } from "react-icons/io";
 
-
-
-  
-const Project = ({ technologies, title, image, color, id, github, deployed, description, year, documentation }) => {
+const Project = ({
+  technologies,
+  title,
+  image,
+  color,
+  id,
+  description,
+  description2,
+  year,
+  why,
+}) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
-
-
   const ProjectList = () =>
-  projectData.map((project, i) => (
-    <Project
-      key={i}
-      id={project.id}
-      title={project.title}
-      technologies={project.technologies}
-      image={project.image}
-      color={project.bgcolor}
-      github={project.github}
-      deployed={project.deployed}
-      description={project.description}
-      year={project.year}
-    />
-  ));
-  
+    projectData.map((project, i) => (
+      <Project
+        key={i}
+        id={project.id}
+        title={project.title}
+        technologies={project.technologies}
+        why={project.why}
+        image={project.image}
+        color={project.bgcolor}
+        github={project.github}
+        deployed={project.deployed}
+        description={project.description}
+        description2={project.description2}
+        year={project.year}
+      />
+    ));
 
   const variants = {
     hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
@@ -79,35 +85,50 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
         onRequestClose={handleCloseModal}
         style={{
           content: {
-            backgroundColor: "#101010",
+            backgroundColor: "#000000",
             color: "#9f9f9f",
-            padding: "60px",
+            padding: "30px",
             display: "flex",
             flexDirection: "column",
-            width: "50vw",
-            top: "50%",
+            width: "80vw",
+            top: "60%",
             left: "50%",
             right: "auto",
             bottom: "auto",
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
             zIndex: "200000",
-            overflow: "hidden"
+            overflow: "hidden",
           },
         }}
       >
-        <img src={close} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close" style={{marginRight: "-20vw"}}></img>
+        <img
+          src={close}
+          className="closeMenu closeModal"
+          onClick={handleCloseModal}
+          alt="Close"
+          style={{ marginRight: "40vw" }}
+        ></img>
         <h3 className="modalTitle">{title}</h3>
+        <h6 className="modalTitleSmall">Connected to Sub Research Question:</h6>
+        <p className="projectDescription">{technologies}</p>
+        <h6 className="modalTitleSmall">Why did I use this method?</h6>
         <p className="projectDescription">{description}</p>
-    <div>
-     
-    </div>
-        <button className="button-projects" onClick={() => (window.location.href = github)}>
-          Final Product/Code
-        </button>
-        <button className="button-projects" onClick={() => (window.location.href = documentation)}>
-          Documentation
-        </button>
+        <h6 className="modalTitleSmall">How</h6>
+        <p className="projectDescription">{description2}</p>
+       
+        <div className="contact-form-grid-item-submit">
+            <a href="https://docs.google.com/document/d/1FFAddMge0wCGzyQLlM5sUdWTAKe-TVFti6yqzP4od3s/edit?usp=sharing">
+              <button
+                className="button-submit"
+                type="submit"
+                value="Reading Guide"
+              >
+                My {title}
+              </button>
+            </a>
+          </div>
+        
       </Modal>
     </motion.div>
   );
