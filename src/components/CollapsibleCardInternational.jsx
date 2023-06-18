@@ -8,9 +8,14 @@ import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import "./CollapsibleCard.css";
 import "./ContactForm.css";
-import Sketches from "../images/Sketches.jpeg";
 
-export default function ControlledAccordionGroup() {
+import bmc from "../images/website pics/international/bmc.JPG";
+import brainstorm from "../images/website pics/international/brainstorm.JPG";
+import coreflection from "../images/website pics/international/coreflection.jpg";
+import fieldresearch from "../images/website pics/international/field.jpg";
+import groupmovie from "../images/website pics/international/Group6.mov";
+
+export default function ControlledAccordionInternational() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -29,24 +34,24 @@ export default function ControlledAccordionGroup() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: "16%", flexShrink: 0 }}>
+          <Typography sx={{ width: "24%", flexShrink: 0 }}>
             <b>Field Research (Observation)</b>
           </Typography>
-          <Typography sx={{ color: "text.secondary" }}>Library</Typography>
+          <Typography sx={{ color: "text.secondary" }}>Field</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <div className="AccordionTitle">
-              {" "}
-              <b>Related to Research Question:</b>{" "}
-              <ol style={{ listStyleType: "decimal" }}>
-                <li>What does youth work do?</li>
-                <li>
-                  Who are the social workers and what are their main tasks in
-                  their job?
-                </li>
-              </ol>
-            </div>
+            <img
+              src={fieldresearch}
+              alt=""
+              style={{
+                height: "35vh",
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
+            <div className="AccordionTitle"> </div>
             <div className="AccordionTitle">
               {" "}
               <b>Why did we conduct Field Research?</b>{" "}
@@ -91,9 +96,9 @@ export default function ControlledAccordionGroup() {
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/d/1-vwTtU-FxpLy-CieJNAuq3kZt3--zGy4gvaVQOtqpj0/edit#bookmark=id.949ltuzcsj5n"
               >
-                Testing Report
+                Field Research Section in Reading Guide
               </Button>
             </ButtonGroup>
           </Typography>
@@ -108,26 +113,24 @@ export default function ControlledAccordionGroup() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: "11%", flexShrink: 0 }}>
+          <Typography sx={{ width: "13%", flexShrink: 0 }}>
             <b> Brainstorming</b>
           </Typography>
-          <Typography sx={{ color: "text.secondary" }}>
-            Stepping Stones
-          </Typography>
+          <Typography sx={{ color: "text.secondary" }}>Workshop</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <div className="AccordionTitle">
-              {" "}
-              <b>Related to Research Question:</b>{" "}
-              <ol style={{ listStyleType: "decimal" }}>
-                <li>
-                  Who are the social workers and what are their main tasks in
-                  their job?
-                </li>
-                <li>What does youth work do?</li>
-              </ol>
-            </div>
+            <img
+              src={brainstorm}
+              alt=""
+              style={{
+                height: "50vh",
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
+            <div className="AccordionTitle"></div>
             <div className="AccordionTitle">
               {" "}
               <b>Why did we Braintstorm?</b>{" "}
@@ -150,7 +153,16 @@ export default function ControlledAccordionGroup() {
             <div className="AccordionTitle">
               <b>How did Brainstorm?</b>
             </div>
-            <div className="AccordionTextBody"></div>
+            <div className="AccordionTextBody">
+              We began the brainstorming session by gathering the full team at a
+              table. We created a comfortable and open atmosphere by arranging
+              chairs in a circle around the table. We distributed sticky notes
+              and markers to encourage active participation. We encouraged
+              everyone to share their ideas freely, emphasizing that no idea was
+              too wild or unrealistic. We facilitated a lively discussion, where
+              we built upon each other's ideas and generated a wide range of
+              creative solutions.
+            </div>
             <ButtonGroup
               className="docBtnGroup"
               variant="outlined"
@@ -159,9 +171,9 @@ export default function ControlledAccordionGroup() {
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/d/1-vwTtU-FxpLy-CieJNAuq3kZt3--zGy4gvaVQOtqpj0/edit#bookmark=id.2kv3uprlxvqd"
               >
-                Personas
+                Brainstorming Section in Reading Guide
               </Button>
             </ButtonGroup>
           </Typography>
@@ -176,81 +188,67 @@ export default function ControlledAccordionGroup() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: "21%", flexShrink: 0 }}>
-            <b>Sketches & Wireframes</b>
+          <Typography sx={{ width: "12%", flexShrink: 0 }}>
+            <b>Co-reflection</b>
           </Typography>
-          <Typography sx={{ color: "text.secondary" }}>Workshop</Typography>
+          <Typography sx={{ color: "text.secondary" }}>Showroom</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <img
+              src={coreflection}
+              alt=""
+              style={{
+                height: "50vh",
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
+            <div className="AccordionTitle"> </div>
+            <div>{/* <img src={} alt="" /> */}</div>
             <div className="AccordionTitle">
               {" "}
-              <b>Related to Research Question:</b>{" "}
-              <ol style={{ listStyleType: "decimal" }}>
-                <li>
-                  How can we present social workers to the youth in the most
-                  reliable way?
-                </li>
-                <li>
-                  How can we educate social workers on the use of online media?
-                </li>
-              </ol>
-            </div>
-            <div>
-              <img src={Sketches} alt="" />
-            </div>
-            <div className="AccordionTitle">
-              {" "}
-              <b>Why did we create Sketches & Wireframes?</b>{" "}
+              <b>Why did we conduct coreflection?</b>{" "}
             </div>
             <div className="AccordionTextBody">
-              Creating sketches and wireframes for our design project was highly
-              beneficial. Firstly, it allowed us to quickly visualize and
-              iterate on different design ideas, facilitating rapid exploration
-              and refinement of concepts. Secondly, sketches and wireframes
-              served as effective communication tools, enabling us to share and
-              gather feedback from stakeholders, ensuring our success early in
-              the design process. Lastly, they helped us identify and address
-              potential usability issues and design flaws before spending
-              significant time and resources in detailed designs.
+              We conducted a co-reflection session for our design challenge
+              because it fostered a collaborative environment, allowing us to
+              tap into the collective knowledge of our team. We were able to
+              gain multiple perspectives and insights, enabling us to identify
+              blind spots, uncover hidden opportunities, and challenge our
+              assumptions. Co-reflection also helped us evaluate our design
+              decisions and processes more effectively, leading to continuous
+              improvement and better outcomes. Additionally, by sharing our
+              successes and challenges, we built a sense of shared ownership and
+              accountability, fostering a stronger team dynamic and enhancing
+              our future collaboration. Ultimately, co-reflection was
+              instrumental in driving innovation, enhancing our learning, and
+              ensuring the overall success of our design project.
             </div>
             <div className="AccordionTitle">
-              <b>How did we create our sketches and wireframes?</b>
+              <b>How did we we conduct coreflection?</b>
             </div>
             <div className="AccordionTextBody">
-              To create sketches and wireframes for our project, we started by
-              brainstorming and sketching out various design concepts on paper
-              and whiteboards as a group. We iterated on these initial ideas,
-              refining and improving them based on feedback, the user needs, and
-              the findings we had gathered from the expert interviews. Once we
-              had solidified our concepts, we translated them into digital
-              wireframes, using Figma. These wireframes helped us visualize the
-              layout, structure, and interactions of our designs, enabling us to
-              evaluate usability and gather further feedback before moving on to
-              the final steps of our design phase which included a design guide
-              and high fidelity prototype.
+              To conduct co-reflection for our design project, we had
+              collaborative sessions where we brought together team members,
+              teachers and our advisors. We created a safe and open environment
+              for everyone to share their thoughts and ideas for the new
+              playground activity. With our advisors help, we tried to take away
+              any biases and be as open minded as possible and really start at
+              the core of our project, by evaluating the Cruyff values. The
+              Cruyff organization bases all their activities on their core
+              values, so we began defining which of those values we personally
+              found the most important to base our new playground activity
+              around.
             </div>
-
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
+            <Button
+              className="docBtn"
+              target="_blank"
+              href="https://docs.google.com/document/d/1-vwTtU-FxpLy-CieJNAuq3kZt3--zGy4gvaVQOtqpj0/edit#bookmark=id.3uvdbows7ggm"
             >
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Our Wireframes
-              </Button>
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Our Sketches
-              </Button>
-            </ButtonGroup>
+              Co-reflection Section in Reading Guide
+            </Button>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -263,145 +261,70 @@ export default function ControlledAccordionGroup() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: "13%", flexShrink: 0 }}>
-            <b>Prototyping</b>
+          <Typography sx={{ width: "20%", flexShrink: 0 }}>
+            <b>Business Model Canvas</b>
           </Typography>
-          <Typography sx={{ color: "text.secondary" }}>Workshop</Typography>
+          <Typography sx={{ color: "text.secondary" }}>
+            Stepping Stones
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <div className="AccordionTitle">
-              {" "}
-              <b>Related to Research Question:</b>{" "}
-              <ol style={{ listStyleType: "decimal" }}>
-                <li>
-                  How can we educate social workers on the use of online media?
-                </li>
-              </ol>
-            </div>
-            <div className="AccordionTitle">
-              {" "}
-              <b>Why did we create our Prototypes?</b>{" "}
-            </div>
-            <div className="AccordionTextBody">
-              Creating a high-fidelity prototype for our project was incredibly
-              valuable. Firstly, it allowed us to showcase the final design
-              vision with realistic visual and interactive elements, providing
-              stakeholders with a tangible representation of the product.
-              Secondly, the prototype served as a powerful tool for user
-              testing, enabling us to gather feedback on the usability,
-              functionality, and overall user experience. This feedback helped
-              us identify and address any design flaws or improvements before
-              the final deliverable. Lastly, a high-fidelity prototype served as
-              a solid basis for any future development of our project.
-            </div>
-            <div className="AccordionTitle">
-              <b>How did we create our Prototypes?</b>
-            </div>
-            <div className="AccordionTextBody">
-              To create prototypes for the Social Sphere website, we referred to
-              the wireframes that we had already made, using Figma as our main
-              prototyping tool. We worked collaboratively, ensuring that the
-              prototypes captured the desired user flow and accurately
-              represented the design vision. Afterward, we conducted usability
-              testing sessions with our prototype, collected feedback from the
-              youth workers, and created an advice report focusing on the user
-              experience and addressed any usability issues we found for future
-              developers and designers to use when creating the next iteration
-              of this website.
-            </div>
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
-            >
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Our Prototype
-              </Button>
-            </ButtonGroup>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        expanded={expanded === "panel4"}
-        onChange={handleChange("panel4")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
-        >
-          <Typography sx={{ width: "26%", flexShrink: 0 }}>
-            <b>Usability & Think Aloud Testing</b>
-          </Typography>
-          <Typography sx={{ color: "text.secondary" }}>Lab</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <div className="AccordionTitle">
-              {" "}
-              <b>Related to Research Question:</b>{" "}
-              <ol
+              <img
+                src={bmc}
+                alt=""
                 style={{
-                  listStyleType: "decimal",
-                  textDecoration: "none",
-                  outline: "none",
+                  height: "50vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
                 }}
-              >
-                <li>
-                  How can we educate social workers on the use of online media?
-                </li>
-              </ol>
+              />
             </div>
             <div className="AccordionTitle">
               {" "}
-              <b>Why did we conduct Usability & Think Aloud Testing?</b>{" "}
+              <b>Why did we create our Business Model Canvas?</b>{" "}
             </div>
             <div className="AccordionTextBody">
-              Conducting usability testing and think-aloud testing for our
-              design project proved to be beneficial because it allowed us to
-              gather valuable insights about how users interacted with our
-              design and identify any usability issues or pain points. The
-              think-aloud testing provided us with direct access to users'
-              thought processes and decision-making, helping us to better
-              understand the actions they did and how they understood our
-              design. This feedback enabled us to make iterate on our solutions
-              for improved user experience. Usability testing was also used to
-              validate the effectiveness of our design choices, ensuring that
-              our final product met the user needs and preferences.
+              We created a business model canvas for our idea of creating a new
+              playground activity because we wanted to thoroughly analyze and
+              plan our venture. As a team, we believed that using a research
+              method like the business model canvas would help us consider all
+              the essential aspects of our idea and make sure that it is
+              feasible. We collaboratively brainstormed and identified key
+              elements such as customer segments, value propositions, and
+              revenue streams. By using the canvas, we could visualize and map
+              out our business model, making it easier to understand and
+              communicate our concept to our stakeholders and advisors. We
+              conducted research, gathered data, and assessed the feasibility of
+              our idea. Together, we felt confident that the business model
+              canvas provided us with a comprehensive and strategic approach to
+              develop our new playground activity.
             </div>
             <div className="AccordionTitle">
-              <b>How did we conduct Usability & Think Aloud Testing?</b>
+              <b>How did we create our Business Model Canvas?</b>
             </div>
             <div className="AccordionTextBody">
-              To conduct usability testing and think-aloud testing for our
-              website, we gathered two different groups of participants, one
-              being experts of UX design and the other being the actual youth
-              workers, who are our target audience. We created a test plan
-              outlining specific tasks and scenarios for participants to
-              complete while thinking aloud. During the testing sessions, we
-              observed and noted participants' interactions and encouraged them
-              to share their thoughts and feedback openly. Afterwards, we
-              analyzed the data, identified common usability issues, and created
-              our advice report based on the insights gained from the testing
-              process.
+              We started creating the business model canvas for the new
+              playground by gathering our group around a table. We placed a
+              large piece of paper in the center of the room and had one person
+              to be our writer. We began by drawing the template for the canvas
+              and adding the key elements like customer segments, value
+              propositions, channels, and revenue streams. We brainstormed and
+              discussed potential target audiences, innovative features, and
+              pricing strategies. We adjusted each section of the canvas based
+              on our collective knowledge and research. We utilized this
+              business model to make sure our idea was comprehensive, feasible
+              and aligned with our overall vision for the new playground.
             </div>
             <ButtonGroup
               className="docBtnGroup"
               variant="outlined"
               aria-label="outlined button group"
             >
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Usability Testing Report
+              <Button className="docBtn" target="_blank" href="https://docs.google.com/document/d/1-vwTtU-FxpLy-CieJNAuq3kZt3--zGy4gvaVQOtqpj0/edit#bookmark=id.21kg70gup3rd">
+                Business Model Canvas Section in Reading Guide
               </Button>
             </ButtonGroup>
           </Typography>

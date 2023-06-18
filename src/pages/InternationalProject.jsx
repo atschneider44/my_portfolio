@@ -4,9 +4,11 @@ import Footer from "../components/Footer.jsx";
 import { TypeAnimation } from "react-type-animation";
 
 import Navbar from "../components/Navbar.jsx";
-import ControlledAccordionIndividual from "../components/CollapsibleCard.jsx";
+import ControlledAccordionInternational from "../components/CollapsibleCardInternational.jsx";
 import "./css/GroupProject.css";
 import "./css/MyProjects.css";
+
+import video from "../images/website pics/international/Group6.mov";
 
 export default class InternationalProject extends Component {
   componentDidMount() {
@@ -50,7 +52,7 @@ export default class InternationalProject extends Component {
                   spy={true}
                   smooth={true}
                 >
-                  Research Questions and the Findings
+                  Research Questions
                 </Link>
               </li>
               <li>
@@ -61,7 +63,7 @@ export default class InternationalProject extends Component {
                   spy={true}
                   smooth={true}
                 >
-                  Learning Outcomes
+                  CMD Methods
                 </Link>
               </li>
               <li>
@@ -119,110 +121,125 @@ export default class InternationalProject extends Component {
               </p>
             </div>
           </Element>
-          <Element name="element2" className="portfolio">
-            <TypeAnimation
-              sequence={[1000, "Our Final Concept"]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
+          <Element
+            name="element2"
+            className="portfolio"
+            style={{
+              marginBottom: "25vh",
+            }}
+          ></Element>
+          <TypeAnimation
+            sequence={[1000, "Our Final Concept"]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            style={{
+              fontSize: "2em",
+              display: "inline-block",
+              top: "50%",
+              right: "50%",
+            }}
+          />
+          <video
+            src={video}
+            width="600"
+            height="300"
+            controls="controls"
+            autoplay="true"
+            style={{
+              marginTop: "5vh",
+            }}
+          />
+
+          <div className="IndividualLText">
+            <p className="textIndividual indent">
+              Our final concept focused on the idea of creating a "playground
+              network" and encouraging kids to play in groups and learn more
+              about renewable energies. We wanted to introduce three new group
+              activities to the playground. The first was a group swing where
+              many kids can sit and swing together. The second was an
+              interactive trampoline field that generates different sounds based
+              on the kids jumping patterns. The third was a standing carousel,
+              where the kids are being spun by other kids or electrically. All
+              of these activities will be generating renewable energy while they
+              are being used to power the activities themselves through their
+              swinging and rotational movements. All of the energy created by
+              the kids will then be redirected to a power station, where the
+              kids can see how much energy they have already generated that day.
+              This power station can then provide energy for the playground
+              activities that need electricity, like the sound for the
+              trampoline field. The rest of the energy can be stored to provide
+              energy for the school and its facilities, like the outdoor
+              lighting for the playground.
+            </p>
+          </div>
+
+          <Element
+            name="element3"
+            className="portfolio"
+            style={{
+              marginBottom: "25vh",
+            }}
+          ></Element>
+
+          <TypeAnimation
+            sequence={[1000, "Research Questions"]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            style={{
+              fontSize: "2em",
+              display: "inline-block",
+            }}
+          />
+          <div className="IndividualLText">
+            <p className="indent">
+              The main research question that we outlined for our project was:
+            </p>
+            <b
+              className=""
               style={{
-                fontSize: "2em",
+                textIndent: "10vw",
+
                 display: "inline-block",
-                marginTop: "15vw",
-                top: "50%",
-                right: "50%",
+                marginTop: "1vw",
+                marginBottom: "2vw",
               }}
-            />
-            <div className="IndividualLText">
-              <p className="textIndividual indent">
-                Our final concept focused on the idea of creating a "playground
-                network" and encouraging kids to play in groups and learn more
-                about renewable energies. We wanted to introduce three new group
-                activities to the playground. The first was a group swing where
-                many kids can sit and swing together. The second was an
-                interactive trampoline field that generates different sounds
-                based on the kids jumping patterns. The third was a standing
-                carousel, where the kids are being spun by other kids or
-                electrically. All of these activities will be generating
-                renewable energy while they are being used to power the
-                activities themselves through their swinging and rotational
-                movements. All of the energy created by the kids will then be
-                redirected to a power station, where the kids can see how much
-                energy they have already generated that day. This power station
-                can then provide energy for the playground activities that need
-                electricity, like the sound for the trampoline field. The rest
-                of the energy can be stored to provide energy for the school and
-                its facilities, like the outdoor lighting for the playground.
-              </p>
-            </div>
-          </Element>
-          <Element name="element3" className="portfolio">
-            <TypeAnimation
-              sequence={[1000, "Research Questions"]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-              style={{
-                fontSize: "2em",
-                display: "inline-block",
-                marginTop: "3vw",
-              }}
-            />
-            <div className="IndividualLText">
-              <p className="indent">
-                The main research question that we outlined for our project was:
-              </p>
-              <b
-                className="indent"
-                style={{
-                  display: "inline-block",
-                  marginTop: "1vw",
-                  marginBottom: "2vw",
-                }}
-              >
-                How to get children to get out more and practice sports through
-                fun games?
-              </b>
-              <p
-                className="indent"
-                style={{
-                  marginBottom: "2vw",
-                }}
-              >
-                Since the question has quite a large scope, we decided to come
-                up with a supportive question, which would help us find an
-                answer to our main one:
-              </p>
-              <ol style={{ listStyleType: "upper-roman" }}>
-                <li className="researchQuestions">
-                  <b>What should kids learn out of this?</b>
-                  <div className="researchQuestionsSection">
-                    <b>Conclusion to Question:</b>
-                  </div>
-                </li>
-                <li className="researchQuestions">
-                  <b>
-                    How to connect kids through games that trigger creativity?
-                  </b>
-                  <div className="researchQuestionsSection">
-                    <b>Conclusion to Question:</b>
-                  </div>
-                </li>
-                <li className="researchQuestions">
-                  <b>How to encourage kids to collaborate in games?</b>
-                  <div className="researchQuestionsSection">
-                    <b>Conclusion to Question:</b>
-                  </div>
-                </li>
-                <li className="researchQuestions">
-                  <b>Which values can be implemented?</b>
-                  <div className="researchQuestionsSection">
-                    <b>Conclusion to Question:</b>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </Element>
+            >
+              How to get children to get out more and practice sports through
+              fun games?
+            </b>
+            <p className="indent">
+              Since the question has quite a large scope, we decided to come up
+              with a supportive question, which would help us find an answer to
+              our main one:
+            </p>
+            <ol style={{ listStyleType: "upper-roman", textIndent: "3vw", }}>
+              <li >
+                <b>What should kids learn out of this?</b>
+              </li>
+              <li >
+                <b>
+                  How to connect kids through games that trigger creativity?
+                </b>
+              </li>
+              <li >
+                <b>How to encourage kids to collaborate in games?</b>
+              </li>
+              <li >
+                <b>Which values can be implemented?</b>
+              </li>
+            </ol>
+          </div>
+
+          <Element
+            name="element4"
+            className="portfolio"
+            style={{
+              marginBottom: "25vh",
+            }}
+          ></Element>
+
 
           <TypeAnimation
             sequence={[1000, "CMD Methods Used"]}
@@ -236,8 +253,15 @@ export default class InternationalProject extends Component {
               marginBottom: "5vh",
             }}
           />
+          <ControlledAccordionInternational />
 
-          <ControlledAccordionIndividual />
+          <Element
+            name="element5"
+            className="portfolio"
+            style={{
+              marginBottom: "25vh",
+            }}
+          ></Element>
 
           <TypeAnimation
             sequence={[1000, "Reading Guide"]}

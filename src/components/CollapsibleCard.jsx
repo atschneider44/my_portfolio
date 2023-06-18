@@ -9,6 +9,10 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import "./CollapsibleCard.css";
 import "./ContactForm.css";
 
+import moodboard from "../images/website pics/individual/moodboard.png";
+import wireframe from "../images/website pics/individual/wireframe.png";
+import benchmark from "../images/website pics/individual/benchmark.png";
+
 export default function ControlledAccordionIndividual() {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -37,10 +41,29 @@ export default function ControlledAccordionIndividual() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <div>
+              <img
+                src={moodboard}
+                alt=""
+                style={{
+                  height: "50vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              />
+            </div>
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
+              <ol style={{ listStyleType: "decimal" }}>
+                <li>
+                  How can I ensure that my portfolio encompasses who I am as a
+                  professional?
+                </li>
+              </ol>
             </div>
+
             <div className="AccordionTitle">
               {" "}
               <b>Why did I utilize a Moodboard?</b>{" "}
@@ -59,35 +82,23 @@ export default function ControlledAccordionIndividual() {
               <b>How did I create the Moodboard?</b>
             </div>
             <div className="AccordionTextBody">
-              To create a moodboard for a portfolio website, start by collecting
-              visual inspiration images, screenshots, color palettes,
+              To create a moodboard for my portfolio website, I started by
+              collecting visual inspiration images, screenshots, color palettes,
               typography, and textures that align with the desired look and feel
-              of your final website. Arrange these elements on a digital canvas,
-              focusing on creating a cohesive visual narrative that reflects the
-              website's desired mood, style, and user experience. Use the
-              moodboard as a reference throughout the design process to ensure
-              consistency and convey the intended aesthetic.
+              of of my final portfolio website. I arranged these elements on
+              Canva. I focused on creating a cohesive moodboard that reflected
+              the website's desired mood, style, and user experience. I used the
+              moodboard as a reference throughout the design process to ensure I
+              delivered a product like the one I initaially wanted.
             </div>
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
+
+            <Button
+              className="docBtn"
+              target="_blank"
+              href="https://docs.google.com/document/d/1FFAddMge0wCGzyQLlM5sUdWTAKe-TVFti6yqzP4od3s/edit#bookmark=id.d1l74pwn1um5"
             >
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Moodboard
-              </Button>
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Link to Moodboard Section in Reading Guide
-              </Button>
-            </ButtonGroup>
+              Link to Moodboard Section in Reading Guide
+            </Button>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -107,9 +118,28 @@ export default function ControlledAccordionIndividual() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <div>
+              <img
+                src={benchmark}
+                alt=""
+                style={{
+                  height: "30vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              />
+            </div>
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
+              <ol style={{ listStyleType: "decimal" }}>
+                <li>What is the best way to navigate a portfolio?</li>
+                <li>
+                  What are employers currently looking for in a professional
+                  portfolio?
+                </li>
+              </ol>
             </div>
             <div className="AccordionTitle">
               {" "}
@@ -148,14 +178,14 @@ export default function ControlledAccordionIndividual() {
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/d/1us3SSTo39foHRMESqPrd_SQ7wgfKUecNq6TdqJrCrM4/edit?usp=sharing"
               >
-                Benchmark Creation
+                Benchmark Creation Document
               </Button>
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/d/1FFAddMge0wCGzyQLlM5sUdWTAKe-TVFti6yqzP4od3s/edit#bookmark=id.m4i7pqkm7m07"
               >
                 Link to Benchmark Creation Section in Reading Guide
               </Button>
@@ -182,6 +212,12 @@ export default function ControlledAccordionIndividual() {
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
+              <ol style={{ listStyleType: "decimal" }}>
+                <li>
+                  What is the most comprehensible way to divide the content in
+                  my portfolio?
+                </li>
+              </ol>
             </div>
             <div className="AccordionTitle">
               {" "}
@@ -216,7 +252,7 @@ export default function ControlledAccordionIndividual() {
             <Button
               className="docBtn"
               target="_blank"
-              href="http://www.google.com/"
+              href="https://docs.google.com/document/d/1FFAddMge0wCGzyQLlM5sUdWTAKe-TVFti6yqzP4od3s/edit#bookmark=id.j44umft39heg"
             >
               Link to Benchmark Creation Section in Reading Guide
             </Button>
@@ -239,9 +275,28 @@ export default function ControlledAccordionIndividual() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+          <div>
+              <img
+                src={wireframe}
+                alt=""
+                style={{
+                  height: "30vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              />
+            </div>
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
+              <ol style={{ listStyleType: "decimal" }}>
+                <li>What is the best way to navigate a portfolio?</li>
+                <li>
+                  What is the most comprehensible way to divide the content in
+                  my portfolio?
+                </li>
+              </ol>
             </div>
             <div className="AccordionTitle">
               {" "}
@@ -280,14 +335,14 @@ export default function ControlledAccordionIndividual() {
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://miro.com/app/board/uXjVMeygkIw=/?share_link_id=478370444484"
               >
                 Wireframes
               </Button>
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/d/1FFAddMge0wCGzyQLlM5sUdWTAKe-TVFti6yqzP4od3s/edit#bookmark=id.2774pkz06v9x"
               >
                 Link to Wireframe Section in Reading Guide
               </Button>

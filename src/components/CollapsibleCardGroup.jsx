@@ -8,8 +8,11 @@ import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import "./CollapsibleCard.css";
 import "./ContactForm.css";
-import Sketches from "../images/Sketches.jpeg"
 
+import benchmark from "../images/website pics/group/benchmark creation.png";
+import persona from "../images/website pics/group/persona.png";
+import prototype from "../images/website pics/group/prototype.png";
+import sketches from "../images/website pics/group/sketches.png";
 
 export default function ControlledAccordionGroup() {
   const [expanded, setExpanded] = React.useState(false);
@@ -37,6 +40,7 @@ export default function ControlledAccordionGroup() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            <div></div>
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
@@ -82,19 +86,13 @@ export default function ControlledAccordionGroup() {
               summary of the interview to use during the next phases of our
               project.
             </div>
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
+            <Button
+              className="docBtn"
+              target="_blank"
+              href="https://docs.google.com/document/d/13FYwlxRiLuOfOgHrKdYkmN0IWAJqdEg1w1S6-pk-sks/edit#bookmark=id.4wa7e0u4wm4x"
             >
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Testing Report
-              </Button>
-            </ButtonGroup>
+              Expert Testing Findings
+            </Button>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -116,6 +114,18 @@ export default function ControlledAccordionGroup() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+          <div>
+              <img
+                src={persona}
+                alt=""
+                style={{
+                  height: "50vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              />
+            </div>
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
@@ -196,10 +206,18 @@ export default function ControlledAccordionGroup() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+          <img
+                src={sketches}
+                alt=""
+                style={{
+                  height: "30vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              />
             <div className="AccordionTitle">
               {" "}
-              
-              
               <b>Related to Research Question:</b>{" "}
               <ol style={{ listStyleType: "decimal" }}>
                 <li>
@@ -211,9 +229,6 @@ export default function ControlledAccordionGroup() {
                 </li>
               </ol>
             </div>
-            <div>
-              <img src={Sketches} alt="" />
-              </div>
             <div className="AccordionTitle">
               {" "}
               <b>Why did we create Sketches & Wireframes?</b>{" "}
@@ -245,27 +260,13 @@ export default function ControlledAccordionGroup() {
               the final steps of our design phase which included a design guide
               and high fidelity prototype.
             </div>
-
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
-            >
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/d/1FKrUhvTJXjyqWnu2a-hKLxRPWMMUxBm4cfDRS_XPYeo/edit#bookmark=id.dlrbl9es0a2z"
               >
-                Our Wireframes
+                Our Design Document
               </Button>
-              <Button
-                className="docBtn"
-                target="_blank"
-                href="http://www.google.com/"
-              >
-                Our Sketches
-              </Button>
-            </ButtonGroup>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -285,6 +286,16 @@ export default function ControlledAccordionGroup() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+          <img
+                src={prototype}
+                alt=""
+                style={{
+                  height: "35vh",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              />
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
@@ -325,31 +336,25 @@ export default function ControlledAccordionGroup() {
               developers and designers to use when creating the next iteration
               of this website.
             </div>
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
-            >
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://www.figma.com/file/EzOeUHi7cO9I3iWoypAXCH/Design?type=design&node-id=1-3"
               >
                 Our Prototype
               </Button>
-            </ButtonGroup>
           </Typography>
         </AccordionDetails>
       </Accordion>
 
       <Accordion
-        expanded={expanded === "panel4"}
-        onChange={handleChange("panel4")}
+        expanded={expanded === "panel5"}
+        onChange={handleChange("panel5")}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
+          aria-controls="panel5bh-content"
+          id="panel5bh-header"
         >
           <Typography sx={{ width: "26%", flexShrink: 0 }}>
             <b>Usability & Think Aloud Testing</b>
@@ -361,9 +366,15 @@ export default function ControlledAccordionGroup() {
             <div className="AccordionTitle">
               {" "}
               <b>Related to Research Question:</b>{" "}
-              <ol style={{ listStyleType: "decimal", textDecoration:"none", outline:"none" }}>
+              <ol
+                style={{
+                  listStyleType: "decimal",
+                  textDecoration: "none",
+                  outline: "none",
+                }}
+              >
                 <li>
-                How can we educate social workers on the use of online media?
+                  How can we educate social workers on the use of online media?
                 </li>
               </ol>
             </div>
@@ -400,19 +411,13 @@ export default function ControlledAccordionGroup() {
               our advice report based on the insights gained from the testing
               process.
             </div>
-            <ButtonGroup
-              className="docBtnGroup"
-              variant="outlined"
-              aria-label="outlined button group"
-            >
               <Button
                 className="docBtn"
                 target="_blank"
-                href="http://www.google.com/"
+                href="https://docs.google.com/document/u/1/d/119BpuMkh3L6rqWjA85NZckjaTdhLVXm1ZuX4uIPgXvY/edit"
               >
                 Usability Testing Report
               </Button>
-            </ButtonGroup>
           </Typography>
         </AccordionDetails>
       </Accordion>
